@@ -104,7 +104,7 @@ export function createAuthRouter(usersCollection, verificationCodesCollection) {
         { $set: { resetToken: token, resetTokenExpiresAt: expiresAt } }
     );
 
-    const resetLink = `http://localhost:5173/reset-password?resetToken=${token}`;
+    const resetLink = `https://trenchsocial-backend.onrender.com/reset-password?resetToken=${token}`;
     await sendResetEmail(email, resetLink);
 
     res.json({ success: true });

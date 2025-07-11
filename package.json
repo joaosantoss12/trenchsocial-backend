@@ -8,7 +8,6 @@
     "body-parser": "^2.2.0",
     "cloudinary": "^2.7.0",
     "cors": "^2.8.5",
-    "date-fns": "^4.1.0",
     "dotenv": "^17.0.1",
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
@@ -32,6 +31,6 @@
   "license": "ISC",
   "description": "",
   "scripts": {
-    "start": "node trenchsocial/src/pages/api/server.js"
+    "start": "node /src/pages/api/server.js"
   }
 }
